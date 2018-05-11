@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core" 
+      xmlns:h="http://java.sun.com/jsf/html">
+
+  <h:head>
+    <title>Authenticated</title>
+  </h:head>
+
+  <h:body>
+    <form class="form-inline" action="logout" method="post">
+      <input type="submit" value="Log out"
+             class="ui-button ui-widget 
+                    ui-state-default ui-corner-all 
+                    ui-button-text-only" />
+      <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+    </form>
+    
+    
+    
+  </h:body>
+
+</html>
